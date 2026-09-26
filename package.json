@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-taginfo",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "OSM Taginfo MCP — statistics on OpenStreetMap tags (keys and key=value pairs).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-18925dfc97ca3722300bad0d80d194d43b7dc130919daa544ee0fd5fc4b885dc",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-31c6c5331b63bc9a06fd9736a42a786d23efae83350d862e099b84ba63af9b0a",
+    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
   }
 }
