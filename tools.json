@@ -1,0 +1,63 @@
+[
+  {
+    "name": "key_values",
+    "description": "OSM Taginfo: list the most common values for an OpenStreetMap key, by frequency (e.g. all amenity= values from \"parking\" down). Useful for understanding how features are tagged in OSM. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "An OSM key, e.g. \"amenity\", \"highway\", \"cuisine\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max values to return (default 20, max 100)."
+        }
+      },
+      "required": [
+        "key"
+      ]
+    }
+  },
+  {
+    "name": "tag_stats",
+    "description": "OSM Taginfo: get usage counts (all / nodes / ways / relations) for a specific OpenStreetMap key=value tag, e.g. amenity=cafe. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "An OSM key, e.g. \"amenity\"."
+        },
+        "value": {
+          "type": "string",
+          "description": "An OSM value for that key, e.g. \"cafe\"."
+        }
+      },
+      "required": [
+        "key",
+        "value"
+      ]
+    }
+  },
+  {
+    "name": "search_keys",
+    "description": "OSM Taginfo: search OpenStreetMap keys by text, ranked by total usage. Useful for discovering how features are tagged in OSM. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Text to search keys for, e.g. \"cuisine\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max keys to return (default 20)."
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  }
+]

@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-taginfo",
-  "version": "0.1.2",
-  "description": "OSM Taginfo MCP — statistics on OpenStreetMap tags (keys and key=value pairs).",
+  "version": "0.2.0",
+  "description": "OSM Taginfo MCP — statistics on OpenStreetMap tags (keys and key=value pairs). Keyless. https://taginfo.openstreetmap.org/api/4",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-taginfo": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "taginfo"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-taginfo.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/taginfo",
   "pipeworx": {
-    "sourceHash": "v1-31c6c5331b63bc9a06fd9736a42a786d23efae83350d862e099b84ba63af9b0a",
-    "sourceCommit": "d4a9636716f113458bd312e487c065f76548df8c"
+    "mode": "gateway",
+    "slug": "taginfo",
+    "gatewaySlug": "taginfo",
+    "sourceHash": "v1-7ae2b9d0f5b10a21c61f81d1ae9af160d2a0b0a6b6a7d62ce702ccdac8904f15",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }
