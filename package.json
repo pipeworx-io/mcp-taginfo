@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-taginfo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "OSM Taginfo MCP — statistics on OpenStreetMap tags (keys and key=value pairs). Keyless. https://taginfo.openstreetmap.org/api/4",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "taginfo",
     "gatewaySlug": "taginfo",
-    "sourceHash": "v1-7ae2b9d0f5b10a21c61f81d1ae9af160d2a0b0a6b6a7d62ce702ccdac8904f15",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-06c38d9bf18b4d8a3b7fa6a0536c9ae6ad084ab4c230192e405401833b75ae7f",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
